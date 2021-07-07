@@ -1,0 +1,16 @@
+---
+title: 海伯利安正式发布经济模型2.0白皮书
+short-title: 海伯利安发布经济模型2.0白皮书
+subtitle: June 22th, 2020
+layout: default
+modal-id: 5
+date: June 22th, 2020
+img: white-paper-v2.png
+thumbnail: white-paper-v2-thumbnail.png
+alt: image-alt
+project-date: June 22th, 2020
+client: Hyperion
+category: Media
+link-type: out-link
+out-link: https://news.huoxing24.com/20200615115713049569.html
+---

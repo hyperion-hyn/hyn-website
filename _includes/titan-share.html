@@ -1,0 +1,32 @@
+<div class="wxtip" id="JweixinTip" style="display: none;">
+    <span class="wxtip-icon"></span>
+    <p class="wxtip-txt">Click on the top right<br />Select open in browser</p>
+</div>
+
+<script type="text/javascript">
+    function getQueryVariable(variable) {
+        let query = window.location.search.substring(1);
+        let vars = query.split("&");
+        for (let i=0;i<vars.length;i++) {
+            let pair = vars[i].split("=");
+            if(pair[0] === variable){
+                return pair[1];
+            }
+        }
+        return(false);
+    }
+
+    var ua = navigator.userAgent;
+    var isWeixin = !!/MicroMessenger/i.test(ua);
+    if (isWeixin) {
+        document.getElementById("JweixinTip").style.display = "block";
+
+        document.getElementById("JweixinTip").onclick = function () {
+            this.style.display = "none";
+        };
+    } else {
+        key = getQueryVariable("key");
+        let titanUrl = "titan://" + key;
+        window.location.href = titanUrl
+    }
+</script>

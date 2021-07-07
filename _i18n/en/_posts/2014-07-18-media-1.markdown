@@ -1,0 +1,17 @@
+---
+title: Hyperion launched upgraded version of Titan Wallet
+short-title: Hyperion launched upgraded version of Titan Wallet
+subtitle: July 15th, 2020
+layout: default
+modal-id: 1
+date: July 15th, 2020
+img: july-monthly-update.png
+thumbnail: july-monthly-update.png
+alt: image-alt
+project-date: July 15th, 2020
+client: Hyperion
+category: Media
+description: Hyperion launched upgraded version of Titan Wallet
+link-type: out-link
+out-link: https://medium.com/hyperion-sg/hyperion-launched-upgraded-version-of-titan-wallet-db1158e22927
+---

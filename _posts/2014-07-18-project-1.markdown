@@ -1,0 +1,74 @@
+---
+title: 2018 Hyperion Annual Report
+short-title: 2018 Hyperion Annual Report
+subtitle: February 19th, 2019
+layout: default
+modal-id: 1
+date: February 19th, 2019
+img: 2018-report.jpeg
+thumbnail: 2018-report-thumbnail.jpeg
+alt: image-alt
+project-date: February 19th, 2019
+client: Hyperion
+category: Media
+description: 2018 Hyperion Annual Report
+---
+
+#### Why do we need an annual report?
+This is the very first annual report of Hyperion project since established, to look back 2018 and see what we have achieved so far. In just a year we figured out the opportunities for decentralized map from the challenges faced by modern map companies like privacy leakage and high data usage cost. Also we managed to develop two decentralized map products for every user to engage with. For Hyperion, 2018 is “the year of Origin for decentralized map”.
+
+#### “Great knowledge comes from the humblest of origins.”
+
+#### Imagine Wild
+
+Hyperion was born out of stealth as a rebellion to challenge the traditional map industry. We had the great confidence to get early supporters to help us experiment and realize our vision to solve the current problems faced by location data users. However, investors barely had confidence in blockchain industry due to the market downturn in 2018. But in the meantime, thanks to the market panic, Hyperion team was enabled to focus on building up a map service infrastructure where it is trusted, private and secured by the community, while we wait for the winter to be over.
+
+Key words: **Hyperion Culture, bold experimentations**
+
+[The world can be a canvas and Hyperion is the brush](https://medium.com/@hyperionsgoffical/the-world-can-be-a-canvas-and-hyperion-is-the-brush-b7545d23a2da)
+
+Luckily, Hyperion never abandoned the vision in decentralized future. For us, spatial consensus means well beyond an engineering methodology, and can support a decentralized map economy of 10 billion people when achieved. In other words, it’s a network of value that can benefit every user through map data usage with privacy protected. In future, as the payment channel built, users can earn economic rewards by joining Hyperion network, for instance, either to provide data service or watch advertisement.
+
+Key words: global map public chain, digital land rights
+
+[Dialogue with Dr. Issac Zhang ,co-founder of Hyperion: blockchain empowers the world’s largest virtual digital land](https://medium.com/@hyperionsgoffical/dialogue-with-dr-236b8a15e9d4)
+
+#### Think Elegant
+
+Ideas need refined strategies to put into actions, especially in difficult times, as no investors will take huge risks without expecting high returns. To survive the winter, Hyperion had to re-think about the practical value and feasibility of consensus map future. The key is the good product. Hyperion team quickly reached their consensus in strategy: only by launching high-quality products that can solve real-life problems, can pioneer the market.
+
+Key words: The path to location data autonomy, 10 billion people, map value stack
+
+[Autonomy over Digital Location](https://medium.com/@hyperionsgoffical/hyperion-a-global-decentralized-map-network-aiming-to-support-a-decentralized-map-economy-of-10-75f61baea716)
+
+#### Build Fast
+
+In mid-2018, since Hyperion published project and Atlas white paper with some early supporters, we have seen significant growth in Hyperion’s vision, technology, and community. We also launched two decentralized map products — MapRush (dMapper) and Map3 (dMap) in Asia, Americas, Oceania and Europe. Details can be found in the two articles below. The two products have attracted more community members to participate our decentralized experiments.
+
+Key words: **MapRush, gaming primitive, social collaboration**
+
+[If you want to go far, go together](https://mp.weixin.qq.com/s/jvKqNC_T0k6A_PLeNqkfJQ)
+
+Key words: security, high speed, service node, Dashboard
+
+[Hyperion launches Map3 (dMap) DevNet on 6th January](https://medium.com/@hyperionsgoffical/hyperion-launches-map3-dmap-devnet-on-6th-january-c60ef08356b6)
+
+#### What we have accomplished in 2018
+
+As the product launched, people start to follow what is ‘decentralized map’, and they register in [Hyperion forum](https://talk.hyn.space/) to share feedbacks and answer inquiries. Our early followers have become the driving force to achieve spatial consensus future.
+
+The most important thing in the 1st year is confidence in the project. By Jan 2019, Hyperion has made a huge progress in community size. The number of community members has reached 72,809, compared with the small team of 20 when built, which proves that developing good products and optimizing user experience is the key to spread a great idea.
+
+Key words: **A walk through to decentralized network, low cost, service hosting**
+
+[A Guide to Hyperion Map3 Network](https://medium.com/@hyperionsgoffical/a-guide-to-hyperion-map3-network-9ee79d66c03d)
+
+#### What to expect in 2019
+
+Through struggles and efforts in the past year, consensus map has ceased to be an abstract concept, but still needs further experiment to realize the future. The meaning of spatial consensus has been scattered in every product design, interface style, crowd-participation, and idea exchange between every user.
+
+From February 2019, Hyperion will launch decentralized map dApp Titan, which will enable users to view decentralized map data such as using Google or Baidu map apps. As the same time, we will upgrade Map3 network, launch Main Net in Q3, and update the growing number of service node worldwide. We welcome more creative members to join Hyperion Forum and share your opinions.
+
+#### Happy Chinese New Year, Hyperion will see you in 2019
+
+![Happy China's new year](https://cdn-images-1.medium.com/max/1600/1*wTlb7pQJZ0zbu_f-0ir80g.png){:class="img-responsive"}

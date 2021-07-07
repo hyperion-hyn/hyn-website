@@ -1,0 +1,17 @@
+---
+title: A simple guide to Hyperion Economic Model 2.0
+short-title: A simple guide to Hyperion Economic Model 2.0
+subtitle: July 24th, 2020
+layout: default
+modal-id: 1
+date: July 24th, 2020
+img: model2.0.jpg
+thumbnail: model2.0.jpg
+alt: image-alt
+project-date: July 24th, 2020
+client: Hyperion
+category: Media
+description: A simple guide to Hyperion Economic Model 2.0
+link-type: out-link
+out-link: https://medium.com/hyperion-sg/a-simple-guide-to-hyperion-economic-model-2-0-2d152f16f2f17
+---

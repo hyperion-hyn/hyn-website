@@ -1,0 +1,61 @@
+---
+title: Growth In Location-Based Services
+short-title: Growth In Location-Based Services
+subtitle: January 30th, 2019
+layout: default
+modal-id: 3
+date: January 30th, 2019
+img: local-base-service.png
+thumbnail: local-base-service-thumbnail.png
+alt: image-alt
+project-date: January 30th, 2019
+client: Hyperion
+category: Media
+
+---
+
+**“Location services or Intelligence is on the rise and according to many executives, it is one of the key marketing strategies for their company in 2018.”**
+
+Among all kinds of smartphone activities, getting location information is the most used service or universal task for the smartphone users. 8 out of 10 smartphone owners use their phone to get directions, recommendations or other information related to their location.
+
+Unlike other mobile activities, location-based services appeal to all age groups & genders making it most used activity in smartphones. Enterprise see great opportunity to capitalize on this to market their offerings to potential consumers.
+
+How does it work: Let’s consider you are leaving your home for shopping. Once you entering the shopping mall, brand in the shopping mall may recognize your location and send you a promotion offer message. You are more likely to visit this store and check on the offering.
+
+It is obvious from the above case, how effective location service advertisements can be to get the attention of customers at the specific moment and have higher likely-hood of gaining new customers.
+
+**“Due to low ROI of marketing activities from traditional ways (content not reaching to potential customers), the enterprise finds location service advertisements as an answer.”**
+
+```text
+As per the report from “Markets and Markets”, the location-based services market is expected to grow to $77.8 Billion by 2021.
+
+– 66% of enterprises rank Location Intelligence as either critical or very important to ongoing revenue growth strategies.
+
+– Enterprises comprised of between 1K and 5K employees say Location Intelligence is critically important to their business success.
+
+– Location-based marketing and location services saw greater adoption in 2016 -2017 and 2018 predictions forecast this to be the year businesses take a “location-first” approach in their marketing, mobile and growth strategy.
+```
+
+#### We talked about the growth in location service promotion, but how this location information is collected?
+
+Did you know smartphones collect GPS location information? Check out the below video for proof.
+[![Click to play](https://img.youtube.com/vi/TuxJIOC8_7o/0.jpg)](https://youtu.be/TuxJIOC8_7o){:target="_blank"}
+
+Since the beginning of 2017, phones have been collecting the addresses of nearby cellular towers — even when location services are disabled and sending that data back to companies, for e.g. Google.
+
+The result is that Google has access to data about individuals’ locations history and their movements. This information is then sold out to third parties or enterprises who use this for location service promotions.
+
+This goes far beyond a reasonable consumer expectation of privacy and irony is our information is sold without our knowledge and benefits are not shared back with the individual whose data was sold to third-parties.
+
+**Hyperion returns power to its consumers:**
+Now with Hyperion, you can have an upper-hand and decide if you want to share and monetize your location data or would like to keep it hidden which is not possible to do with location services like google map. (Read more [here](https://qz.com/1131515/google-collects-android-users-locations-even-when-location-services-are-disabled/) )
+
+**Hyperion will help to bring much needed “transparency, privacy and ownership” for its app users, but what attracts users to use Hyperion:**
+
+    1. High Accuracy: The Hyperion approach of making governance and production of maps, community-driven makes the maps in Hyperion frequently updated and more accurate representation of location information.
+    
+    2. Early adopters: Reward for contributing to building maps or govern will attract a high number of early adopters.
+    
+    3. Awareness & ownership: After Google/ Facebook lawsuit, more and more people are becoming aware of how companies are stealing their privacy. This increased concern raise the opportunity for safer options, apps which allow to not share or hide their location information. In Hyperion, users will be able to give their consent or disable location sharing and use of smart contracts (blockchain) will ensure users consent is respected. This will give confidence to users that their data is not with centralized control and can trust Hyperion for safe keeping.
+    
+    4. Share benefits: Hyperion is the only place where users location information can be monetized and profits are shared back with the individual.

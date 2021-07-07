@@ -1,0 +1,52 @@
+---
+title: Hyperion launches Map3 (DMap) DevNet on 6th January
+short-title: Hyperion launches Map3 (DMap) DevNet on 6th January
+subtitle: January 10th, 2019
+layout: default
+modal-id: 4
+date: January 10th, 2019
+img: dmap.jpg
+thumbnail: dmap-thumbnail.jpg
+alt: image-alt
+project-date: January 10th, 2019
+client: Hyperion
+category: Media
+
+---
+
+SINGAPORE, Jan. 8, 2019 /PRNewswire/ — Post release of MapRush on 27th December, 2018, Hyperion has kept its momentum and on 6th January 2019, launched the Map3 DevNet with nodes covering Europe, Asia, America and Australia. Map3 is a secure, and high speed decentralized map network aiming to provide high quality services to business institutions and end consumers. Participants can host a Map3 node similar to the hosting of nodes for Bitcoin and Ethereum, but with a much lower barrier of entry. A standard home computer will suffice to join and run services for the Map3 network.
+
+At the same time, Hyperion is preparing for the launch of the official Dashboard to provide our users and token holders a detailed view into the status of the project.
+
+About maps:
+
+Maps are huge business. Today approximately 1/3 of top domains are integrated with maps,
+serving 1 trillion location requests daily. [Google maps latest pricing](https://cloud.google.com/maps-platform/pricing/sheet/) scheme charges enterprise users US$2 to US$7 per thousand maps shows. Maps have developed from a flat picture of locations to include geographic, meteorological data, even transportation planning, commercial and other useful information needed to reach spatial consensus, which enables us to connect with the world much more easily.
+
+Digital maps have proved their efficiency to enable consumer applications e.g. location based social networks, maps, etc. However, prior to Hyperion, location data could only be distributed through centralized organizations with the cost of user privacy. As reported by Techcrunch, location privacy is a dire issue these days. The Cambridge Analytica scandal is another showcase of how large players have been compromising user data. In addition to the privacy issue, digital map lacks pervasiveness as it is prohibitively expensive to update frequently.
+
+Map3 – DMap Service Network
+
+Map3 embodies the idea of Web 3.0, a decentralized map that conforms to the intrinsic values of Web3. Map3 changes the landscape and re-distributes wealth and opportunity to the open-participating community by enabling secure and privacy preserved peer to peer servicing.
+
+MapRush (Dmapper) encourages users to upload location data and provide data correction within the network. This solution will eventually revolutionize the mapping era, and respond to the issue of location data derivatives.
+
+Map3 will introduce more features in the future such as custom p2p protocol, byzantine tolerance and token payment channels according to user feedback. With the improvement of network nodes, Map3 will be able to provide more personal services to users.
+
+Titan, the decentralised map for everyone
+
+Hyperion will officially launch a beta version of Titan in February 2019. Users can download Titan and see location information based on the Map3 network. Titan supports custom map styles – users can be a map designer to redefine the look of spaces. In the future, Titan will serve more location-based functions such as advertisements, searches and positioning.
+
+Hyperion – the future of Spatial Consensus Maps
+
+With technological baseline set in place, Hyperion team will then work on the important mechanism design to correctly incentivize players in the current location ecosystem to join our network.
+
+Hyperion strives for organically integrated innovations in three critical dimensions, coined as the Hyperion Trinity of map technology, economy and society structures, to eventually achieve a sustainable and self-governed map economy of the world. With this, Hyperion will finally achieve the real ‘free map service’.
+
+Hyperion, the spatial consensus map from the future, has been revealed.
+
+Telegram: [https://t.me/HyperionOfficalHYN](https://t.me/HyperionOfficalHYN){:target="_blank"}
+
+Website: [www.hyn.space](https://www.hyn.space){:target="_blank"}
+
+Media Contact: <Biz@hyn.space>

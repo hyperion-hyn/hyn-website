@@ -1,0 +1,16 @@
+---
+title: 开放地图生态的未来与机遇
+short-title: 开放地图生态的未来与机遇
+subtitle: June 3th, 2020
+layout: default
+modal-id: 2
+date: June 3th, 2020
+img: cn_2.jpg
+thumbnail: cn_2-thumbnail.jpg
+alt: image-alt
+project-date: June 3th, 2020
+client: Hyperion
+category: Media
+link-type: out-link
+out-link: https://news.huoxing24.com/20200603212126038190.html
+---

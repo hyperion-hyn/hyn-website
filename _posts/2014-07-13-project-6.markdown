@@ -1,0 +1,32 @@
+---
+title: Atlas by Hyperion： Global Blockchain-based Mapping Ecosystem Democratizes Map Making and Its Monetization
+short-title: Atlas by Hyperion： Global Blockchain-based Mapping Ecosystem Democratizes
+subtitle: September 24sth, 2018
+layout: default
+modal-id: 6
+date: September 24sth, 2018
+img: hyperion-team.jpeg
+thumbnail: hyperion-team-thumbnail.jpg
+alt: image-alt
+project-date: September 24sth, 2018
+client: Hyperion
+category: Media
+
+---
+SINGAPORE, Sept. 14, 2018 /PRNewswire/ -- Anyone can participate in the making of and upkeep of a map -- and make money from it. That's the powerfully ambitious plan that Hyperion has for its new decentralized global map economy. **Atlas**, the **Spatial Consensus Blockchain**, is designed with the **Hyperion Trinity** in mind: (1) maps can be crowd-built because quality global map data can be collected from any interested individual and maps can be maintained by the public collective, (2) a secure, crowd-sharing reward infrastructure exists to incentivize contributors for their efforts, and (3) community-based crowd-governing structures oversee the smooth running and maintenance of the ecosystem. To put it simply, Atlas empowers people to build map technology, share economic returns and self-govern map communities.
+
+"By liberating maps from the traditional highly controlled model, we intend to fundamentally transform the global economy. We believe that map data should be open and accessible to all, and that by doing so we will unlock massive untapped value in the products and services we or other parties can build on this data." -- Mr Isaac Zhang, Hyperion founder
+
+The three dimensions of the Hyperion Trinity are supported by the innovative **Elastic Spatial Sharding** scheme. With this transformative solution, Atlas ingeniously resolves three intrinsic challenges of consensus mapping.
+
+First, information of space is highly skewed and unpredictable -- we have no control of how and where things happen on maps. A highly dynamic and elastic load-balancing of network infrastructure is thus needed. Secondly, the way spatial information is handled must be able to scale easily with the increase and decrease of participants and requirements, and the representation of spatial data needs to support the requirements of efficient and robust multi-dimensional indexing and operation. Thirdly, to effectively process spatial data on a global scale, an effective sharding scheme has to enable massive parallelization.
+
+Atlas's Elastic Spatial Sharding solution is elegantly simple and was designed based on the deceptively and equally simple Hilbert Curve, a fractal space-filling curve. A fractal curve has the same pattern across varying magnitudes. The curve is space-filling if it is able to visit every point in a planar area. It defines a continuous mapping from a lower-dimensional space (a line) into a higher-dimensional space (a plane). With liberal use of the Hilbert Curve, Atlas has formulated a comprehensive solution. The Hilbert curve is employed deterministically to address every location on the planet on multi-levels to preserve the neighborhood of locations.
+
+At the same time, Atlas will resolve privacy and cost issues we face with current centralized map data and map service providers. Corporations pay a large fee for use of map services. For individuals, the price is exacted in the loss of privacy. Specifically, with respect to private map data, user location traces and user profile information, Atlas employs block production protocols based on proven works such as OmniLedger and RapidChain.
+
+To conclude, Atlas is the first blockchain built purposefully for hosting a diversified spatial data structure. All service nodes of the Atlas network are spatially indexed, supporting fast queries and other complex geospatial operations such as localization to compute location with triangulation, performing nearby searches and finding optimal routes. That means real-time map data and service information, all the time, in an open and decentralized ecosystem that is accessible to everyone.
+
+For more information, visit [www.hyn.space](https://www.hyn.space).
+
+Official Telegram: [https://t.me/HyperionOfficialHYN](https://t.me/HyperionOfficialHYN)

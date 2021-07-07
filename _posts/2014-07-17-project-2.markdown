@@ -1,0 +1,130 @@
+---
+title: A Guide to Hyperion Map3 Network
+short-title: A Guide to Hyperion Map3 Network
+subtitle: February 19th, 2019
+layout: default
+modal-id: 2
+date: February 19th, 2019
+img: map3-guide.jpeg
+thumbnail: map3-guide-thumbnail.jpg
+alt: image-alt
+project-date: February 19th, 2019
+client: Hyperion
+category: Media
+---
+
+“Geospatial data is a project that’s too big solve by a single commercial entity with a business model based on commercializing that data. Open collaboration around global map data is the future of maps.” (by [Alex Barth](https://www.citylab.com/design/2015/06/who-owns-the-digital-map-of-the-world/396119/) from Mapbox)
+
+With the launch of Map3 network, everyone is enabled to participate and achieve autonomy over location data with the idle resources at home just as how early days bitcoin advocates joined the network. This guide will walk you through Map3 network and help you understand why you should join and how you can contribute to it.
+
+**Why decentralized map matters**
+
+Users cannot but pay huge map usage costs with company-centric governance over location data. For instance, Google map’s latest pricing scheme charges enterprise users US$2 to US$7 per thousand maps shows. The recent [increase in API fee](https://gadgets.ndtv.com/apps/features/google-maps-apis-new-pricing-impact-1907242) for websites or apps that exceeded the limit of 25,000 maps views per day even furthered the expenses for users.
+
+In the meantime, exploiting user privacy has become an unspoken practice of big players. In Jan 2019, [Techcrunch](https://techcrunch.com/2019/01/09/us-cell-carriers-still-selling-your-location-data/?guccounter=1) reveals that US cell carriers still track and sell users real-time location information to other companies in the circumstance of having the same issue just last year. In addition, in Nov 2018, [Google](https://techcrunch.com/2018/11/27/google-faces-gdpr-complaint-over-deceptive-location-tracking/) was complained by European consumer organizations for using manipulative tactics to track users’ locations for ad-targeting purposes. An essay published in [Stanford research](https://plato.stanford.edu/entries/it-privacy/) studied the consequence of privacy leakage, and claimed that unrestricted access to user account details can harm the data subject in terms of data discrimination and inequality.
+
+By contrast, decentralized map model values every user. It is built based on spatial consensus, and empowers everyone to build, own and govern map data. Only such decentralized map features pervasive and updated data with low cost while it also protects privacy.
+
+![](https://cdn-images-1.medium.com/max/1600/1*KQJFDQMGgTCKdduefsgkDQ.jpeg){:class="img-responsive"}
+Figure1. Built-with Statistics
+
+![](https://cdn-images-1.medium.com/max/1600/1*AkMpx04_JacIdP8oL9w6eQ.png){:class="img-responsive"}
+Figure2. Datanyze Statistics
+
+[Built-with statistics](https://trends.builtwith.com/mapping/OpenStreetMap) shows that since January 2018, 20,412 websites worldwide have been using open-source maps instead of Google Maps. The number includes [1.12% of top 1 million sites](https://trends.builtwith.com/mapping/OpenStreetMap). Although the market share still seems narrow, open-source map has clearly been making up ground with a [growing number of usage](https://www.datanyze.com/market-share/mapping-and-gis/google-maps-api-vs-mapbox-gl-js-api). The stumbling block to its prevalence is a lack of well-designed user incentive system, which has been solved by Hyperion ecosystem.
+
+**What is Map3 network**
+
+Hyperion ecosystem proposes an integrated design of technology, economy and community for everyone. A normal home computer will suffice to join Map3 network, run as a node for service hosting and provide valuable services. When token payment channels built, each service contributor will share the network’s total economic return.
+
+To better understand how Map3 works, let’s provide an example. If 1 million home computer users have joined Map3 network, and the network receives 1 trillion map requests per day, each service node will handle 1 million requests. Let’s presume per thousand data usage charges US$0.05, in return each service provider can earn US$50 every day, while the cost is marginal. It means with very low cost, each user can earn extra income by simply running the node at home. In the meantime, to ensure data quality, Map3 will encourage frequently updated and trusted nodes by prioritizing their reward payment.
+
+**A Walk Through to Map3 network**
+
+What is a service node? Map3 network comprises core and edge layers. Nodes are distributed in the two layers. A core node requires 60G hard disk space to record map data; but an edge node only needs to receive data requests, transfer data from the core node, and send it peer to peer to end users, which is known as a service node. Home computer users are recommended to join as a service node.
+
+Hyperion also published a test map and a Dashboard to visualize individual node performance. When the node is providing services normally, the map will show location data. In the meantime, Dashboard will present statistics of served requests, CPU and memory usage. We highly welcome our creative community to participate in enriching Dashboard presentation by joining us at Hyperion Forum as the network grows.
+
+![](https://cdn-images-1.medium.com/max/1600/1*yoduCo-1kxj3Gf1bsG0gKw.png){:class="img-responsive"}
+
+![](https://cdn-images-1.medium.com/max/1600/1*FlVAuOkhD9Pr-1zpuzx2FA.jpeg){:class="img-responsive"}
+Dashboard for service node
+
+For entry-level users, we have minimized the steps to join Map3 at ease. The first step is to create an account at AWS. After creating the account, the system will automatically deploy an edge node in the network just with one click. You can follow the official AWS for detailed instructions. To facilitate reading, we also attach a simple walk through of the overall process below.
+
+**Step1: Create an account and Key Pair**
+* Create an account (Please follow AWS instructions)
+* Sign in to AWS console
+* Create key Pair
+    * Choose your preferred country (region)
+        * [US East (Ohio)](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs:sort=keyName)
+        * [US East (N. Virginia)](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#KeyPairs:sort=keyName)
+        * [US West (N. California)](https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#KeyPairs:sort=keyName)
+        * [US West (Oregon)](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#KeyPairs:sort=keyName)
+        * [Asia Pacific (Mumbai)](https://ap-south-1.console.aws.amazon.com/ec2/v2/home?region=ap-south-1#KeyPairs:sort=keyName)
+        * [Asia Pacific (Seoul)](https://ap-northeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#KeyPairs:sort=keyName)
+        * [Asia Pacific (Singapore)](https://ap-southeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#KeyPairs:sort=keyName)
+        * [Asia Pacific (Sydney)](https://ap-southeast-2.console.aws.amazon.com/ec2/v2/home?region=ap-southeast-2#KeyPairs:sort=keyName)
+        * [Asia Pacific (Tokyo)](https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#KeyPairs:sort=keyName)
+        * [Canada (Central)](https://ca-central-1.console.aws.amazon.com/ec2/v2/home?region=ca-central-1#KeyPairs:sort=keyName)
+        * [EU (Frankfurt)](https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#KeyPairs:sort=keyName)
+        * [EU (Ireland)](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName)
+        * [EU (London)](https://eu-west-2.console.aws.amazon.com/ec2/v2/home?region=eu-west-2#KeyPairs:sort=keyName)
+        * [EU (Paris)	](https://eu-west-3.console.aws.amazon.com/ec2/v2/home?region=eu-west-3#KeyPairs:sort=keyName)
+        * [EU (Stockholm)](https://eu-north-1.console.aws.amazon.com/ec2/v2/home?region=eu-north-1#KeyPairs:sort=keyName)
+        * [South America (São Paulo)](https://sa-east-1.console.aws.amazon.com/ec2/v2/home?region=sa-east-1#KeyPairs:sort=keyName)
+    * Click “Create key Pair” button in the page center to create your first key pair
+    ![](https://cdn-images-1.medium.com/max/1600/1*D26GBkbpgfWVZjd1q3UGHw.png){:class="img-responsive"}
+    * Create your own key pair name
+    ![](https://cdn-images-1.medium.com/max/1600/1*6Y3ivlLZpo1_QaQi_NphjQ.png){:class="img-responsive"}
+    * Click “Create Key Pair” button
+        1. The Browser will automatically download a key pair file, please save the file for future logins to Amazon Elastic Compute Cloud (EC2).
+        2. File names may vary across different operational systems
+    ![](https://cdn-images-1.medium.com/max/1600/1*3pUkD6cttkm0aFY9b_-FsQ.png){:class="img-responsive"}
+    
+**Step2: Deploy Map3 edge node**
+* Click the following link to create new stack.
+    * [US East (Ohio)](https://us-east-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [US East (N. Virginia)](https://us-east-2.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [US West (N. California)](https://us-west-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [US West (Oregon)](https://us-west-2.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [Asia Pacific (Mumbai)](https://ap-south-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [Asia Pacific (Seoul)](https://ap-northeast-2.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [Asia Pacific (Singapore)](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [Asia Pacific (Sydney)](https://ap-southeast-2.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [Asia Pacific (Tokyo)](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [Canada (Central)](https://ca-central-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [EU (Frankfurt)](https://eu-central-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [EU (Ireland)](https://eu-west-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [EU (London)](https://eu-west-2.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [EU (Paris)](https://eu-west-3.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [EU (Stockholm)](https://eu-north-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+    * [South America (São Paulo)](https://sa-east-1.console.aws.amazon.com/cloudformation/home#/stacks/create/review?templateURL=https://s3-ap-southeast-1.amazonaws.com/hyn.static/cloud-formation/map3-edge-node-cloud-formation.json&stackName=map3-edge-node-cf&param_InstanceType=t2.micro)
+* Specify Details. Fill in Stack name, select default InstanceType t2.micro, and choose the keyname you used when creating key pair in the dropdown menu
+    
+    Users are recommend to choose ‘t2.micro’, which is a free usage tier.Per month, the AWS free usage tier covers: 750-hour usage and 15GB of bandwidth out aggregated across all AWS services. (Please check [AWS official websites](https://aws.amazon.com/ec2/instance-types/) for more details about **Free Usage Tier**). **When all information filled, click “Create” button to start creating the edge node.**
+    ![](https://cdn-images-1.medium.com/max/1600/1*uqeOBPmQs2stSd-wZivOkg.png){:class="img-responsive"}
+* You have now created an edge node. Wait **2–3 minutes** for the system to confirm.
+    ![](https://cdn-images-1.medium.com/max/1600/1*Y-6rlhXoublU1x38hNSKeQ.png){:class="img-responsive"}
+* Check your edge node operation status by visiting the link below:[https://console.aws.amazon.com/ec2/v2/home#Instances:sort=desc:instanceState](https://console.aws.amazon.com/ec2/v2/home#Instances:sort=desc:instanceState) Choose your preferred region if you need when opening the link above.
+  Remember to obtain your public IP (you need **Ipv4** to view individual node Dashboard)
+  ![](https://cdn-images-1.medium.com/max/1600/1*_jh-kTTxVRbho7cxbDhyRA.png){:class="img-responsive"}
+* The node is being prepared
+* The node is in operation
+    ![](https://cdn-images-1.medium.com/max/1600/1*LN1hZvluj51ZMRJuhA2quA.png){:class="img-responsive"}
+
+**Tip. 1** Enter you public IP(IPV4 ONLY) on your browser, you can see your own map node dashboard. The username and password for dashboard is “**admin**”
+
+**Tip. 2** Once you deploy the node, you **don’t** have to always keep your computers live or AWS account logged in.
+
+**Tip. 3** You can raise as many Map 3 notes as you wish as long as you follow the instruction above. But please note that Amazon might **charge** you for this as **t2.micro** has limited free usage and bandwidth.
+
+**Step3: How to delete a node**
+* Click “**Create Stack**”dropdown menu, and choose delete Stack
+![](https://cdn-images-1.medium.com/max/1600/1*GnKXIreHYOOrP2rEC5U2gw.png){:class="img-responsive"}
+* Click “**Yes, Delete**” to delete Stack
+![](https://cdn-images-1.medium.com/max/1600/1*k-4wfW2QNci3DUVVRPoOTQ.png){:class="img-responsive"}
+* Confirm your status
+![](https://cdn-images-1.medium.com/max/1600/1*EoHdsWkCEXu0_7VwANeE6w.png){:class="img-responsive"}
+
+**Please send your inquiries to Hyperion Forum via [talk.hyn.space](https://talk.hyn.space) if you have encountered any problems. Or send an email to chenbin@hyn.space for technical issues.**

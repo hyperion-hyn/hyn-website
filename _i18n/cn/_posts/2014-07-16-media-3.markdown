@@ -1,0 +1,17 @@
+---
+title: 海伯利安Atlas主网正式上线
+short-title: 海伯利安Atlas主网正式上线
+subtitle: September 27th, 2020
+layout: default
+modal-id: 1
+date: September 27th, 2020
+img: atlas_mainnet.png
+thumbnail: atlas_mainnet_thumbnail.png
+alt: image-alt
+project-date: September 27th, 2020
+client: Hyperion
+category: Media
+link-type: out-link
+out-link: https://news.huoxing24.com/20200927152343063335.html
+---
+

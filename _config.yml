@@ -1,0 +1,41 @@
+url: https://www.hyn.space
+baseurl: ""
+
+# Site settings
+title: Hyperion | 海伯利安
+email: administrator@hyn.space
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: paper-plane
+    url: https://t.me/HyperionOfficialHYN
+  - title: twitter
+    url: https://twitter.com/HyperionHYN?lang=en
+  - title: facebook
+    url: https://www.facebook.com/Hyperion-854025704797996/?modal=admin_todo_tour
+  - title: medium
+    url: https://medium.com/@hyperionsgoffical
+  - title: github
+    url: https://github.com/hyperion-hyn
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-multiple-languages-plugin
+
+languages:
+  - en
+  - cn
+
+language_default: en
+
+exclude_from_localizations:
+  ["javascript", "images", "css", "scripts", "favicon.ico"]

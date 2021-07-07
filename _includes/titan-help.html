@@ -1,0 +1,45 @@
+<section class="welcome_area clearfix" id="home">
+    <div class="welcome-bg-shape">
+        <img class="welcome-first-shape" src="../../img/core-img/welcome-bg-1.png" alt="">
+        <img class="welcome-second-shape" src="../../img/core-img/welcome-bg-2.png" alt="">
+    </div>
+
+    <!-- Shape -->
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 col-md-7">
+                <div class="welcome-content content-padding">
+                    <h4><span>{% translate pages.titan.help.title1 %}</span></h4>
+                    <h6>
+                        {% translate pages.titan.help.content1 %}
+                    </h6>
+                </div>
+
+                <div class="welcome-content content-padding" id="guide">
+                    <h4><span>{% translate pages.titan.help.title2 %}</span></h4>
+                    <div>
+                        {% translate pages.titan.help.content2 %}
+                    </div>
+
+                    <h4 id="en-guide-title" style="display: none"><span>A simple guide to “cryptographic location share”</span></h4>
+                    <div id="en-guide" style="display: none">
+                        <h6>User A (Share encrypted location message), User B (View decoded map)</h6>
+                        <h6><strong>Step 1: Share location</strong></h6>
+                        <h6>1.	User B copy individual public key address and share it with User A via Messaging Apps</h6>
+                        <h6>2.	User A select a location on Titan map, and click “share private location”</h6>
+                        <h6>3.	User A paste User B’s public key address</h6>
+                        <h6>4.	User A fill in notes to share with location (optional)</h6>
+                        <h6>5.	User A Click “encrypt and share” to generate location code and share to B</h6>
+                        <h6><strong>Step 2: View decoded map</strong></h6>
+                        <h6>1.	User B copy location code received from User A</h6>
+                        <h6>2.	Titan will automatically shows the code. User B click “Decode location in Map”</h6>
+                        <h6>3.	Or User B manually paste the code to the top frame</h6>
+                        <h6>4.	If location shows, your location is decoded successfully.</h6>
+                        <h6>5.	Click “Titan” button to delete data after location share</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

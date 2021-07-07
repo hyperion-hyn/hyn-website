@@ -1,0 +1,17 @@
+---
+title: HYN Economic Model 2.0
+short-title: HYN Economic Model 2.0
+subtitle: July 17th, 2020
+layout: default
+modal-id: 1
+date: July 17th, 2020
+img: model2.0-1.jpg
+thumbnail: model2.0-1.jpg
+alt: image-alt
+project-date: July 17th, 2020
+client: Hyperion
+category: Media
+description: HYN Economic Model 2.0
+link-type: out-link
+out-link: https://medium.com/hyperion-sg/hyn-economic-model-2-0-c6d0d66142851
+---

@@ -1,0 +1,16 @@
+---
+title: 海伯利安区块浏览器Hynscan已上线
+short-title: 海伯利安区块浏览器Hynscan已上线
+subtitle: November 9th, 2020
+layout: default
+modal-id: 4
+date: November 9th, 2020
+img: hynscan.png
+thumbnail: hynscan_thumbnail.png
+alt: image-alt
+project-date: November 9th, 2020
+client: Hyperion
+category: Media
+link-type: out-link
+out-link: https://news.huoxing24.com/20201109150546988617.html
+---

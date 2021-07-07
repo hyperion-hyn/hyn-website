@@ -1,0 +1,69 @@
+<section class="welcome_area clearfix" id="home">
+  <div class="welcome-bg-shape">
+    <img class="welcome-first-shape" src="../../img/core-img/welcome-bg-1.png" alt="" />
+    <img class="welcome-second-shape" src="../../img/core-img/welcome-bg-2.png" alt="" />
+  </div>
+
+  <!-- Shape -->
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-md-8">
+        <div class="welcome-content">
+          <h2><span>{% translate pages.titan.download.title %}</span></h2>
+          <h6>
+            {% translate pages.titan.download.content %}
+          </h6>
+        </div>
+        <div class="app-download-area">
+          <div class="app-download-btn">
+            <a href="http://h.hyn.space/download" target="_blank"
+              onclick="_czc.push(['_trackEvent', 'map3', 'download', 'titan','','']);"><i class="fa fa-download"></i>
+              <p class="mb-0">
+                <span>{% translate pages.titan.download.btns.download.subtitle
+                  %}</span>{% translate pages.titan.download.btns.download.title %}
+              </p>
+            </a>
+          </div>
+          <!--<div class="app-download-btn">
+            <a href="https://play.google.com/store/apps/details?id=org.hyn.titan"><i class="fa fa-android"></i>
+              <p class="mb-0">
+                <span>{% translate pages.titan.download.btns.google.subtitle
+                  %}</span>{% translate pages.titan.download.btns.google.title %}
+              </p>
+            </a>
+          </div>-->
+          <div class="app-download-btn">
+            <a href="https://apps.apple.com/us/app/titan-map/id1477306917" target="_blank"><i class="fa fa-apple"></i>
+              <p class="mb-0"><span>Available on</span> Apple Store
+              </p>
+            </a>
+          </div>
+        </div>
+        <p style="padding-top: 30px; color: #ff4c8b"><strong>中国大陆用户请安装<a href="https://testflight.apple.com" target="_blank">testflight</a>，然后在safari输入<a href="https://testflight.apple.com/join/CtIwpRCS" target="_blank">https://testflight.apple.com/join/CtIwpRCS</a>安装内测版。</strong></p>
+      </div>
+    </div>
+
+    <!--<div class="welcome-mobile-device text-right">
+            <img src="../../img/bg-img/wel-dev-1.png" alt="">
+            <img src="../../img/bg-img/wel-dev-2.png" alt="">
+        </div>-->
+  </div>
+</section>
+
+<div class="wxtip" id="JweixinTip" style="display: none;">
+  <span class="wxtip-icon"></span>
+  <p class="wxtip-txt">Click on the top right<br />Select open in browser</p>
+</div>
+
+<script type="text/javascript">
+  window.location.href = "https://h.hyn.space/download"
+  var ua = navigator.userAgent;
+  var isWeixin = !!/MicroMessenger/i.test(ua);
+  if (isWeixin) {
+    document.getElementById("JweixinTip").style.display = "block";
+
+    document.getElementById("JweixinTip").onclick = function () {
+      this.style.display = "none";
+    };
+  }
+</script>

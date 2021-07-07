@@ -1,0 +1,17 @@
+---
+title: Map3 Cloud Node (v0.8)Open Staking
+short-title: Map3 Cloud Node (v0.8)Open Staking
+subtitle: April 28th, 2020
+layout: default
+modal-id: 1
+date: April 28th, 2020
+img: staking-node-thumbnail.jpeg
+thumbnail: staking-node-thumbnail.jpeg
+alt: image-alt
+project-date: April 28th, 2020
+client: Hyperion
+category: Media
+description: Map3 Cloud Node (v0.8)Open Staking
+link-type: out-link
+out-link: https://medium.com/hyperion-sg/map3-cloud-node-v0-8-open-staking-31fbc3f45e03
+---

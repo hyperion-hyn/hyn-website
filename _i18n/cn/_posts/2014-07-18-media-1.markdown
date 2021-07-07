@@ -1,0 +1,17 @@
+---
+title: Hyperion智能合约通过慢雾安全审计
+short-title: Hyperion智能合约通过慢雾安全审计
+subtitle: April 17th, 2020
+layout: default
+modal-id: 1
+date: April 17th, 2020
+img: contract-audit.jpeg
+thumbnail: contract-audit-thumbnail.jpg
+alt: image-alt
+project-date: April 17th, 2020
+client: Hyperion
+category: Media
+link-type: out-link
+out-link: https://news.huoxing24.com/20200417123632805515.html
+---
+

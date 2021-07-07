@@ -1,0 +1,225 @@
+# Site settings
+title: Hyn.space
+email: administrator@hyn.space
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+
+langs:
+  en: English
+  cn: 中文（中国）
+
+menus:
+    titan: Titan
+    map3: Map3
+    atlas: Atlas
+    review: Review
+    team: Team
+    media: Media
+    forum: Forum
+
+scrollbar:
+  title: One Map
+  btn: Tell Me More
+
+hyperion:
+  title: Hyperion
+  subtitle: What is Hyperion?
+  content: Hyperion, a decentralized map platform, aims to achieve the “One Map” vision - to provide an unified view of global map data and service, and to make it universally accessible just like a public utility for 10B people. Built on the Spatial Consensus Protocol which encloses not just spatial information but also value transfer, Hyperion fundamentally redefines the way we create and consume map services, conforming to our first principles to make maps aggressively open and decentralized.
+
+titan:
+  content: The first ever truly privacy-aware map application built on strong cryptographic primitives. All map functions such as positioning and searching are computed locally at the phone. Your location trace will never leave your phone and you have the power to burn them all with just one click. Through our cryptographic library, you can even share a location to your friend with no other intermedia platforms learning where you are and where you want to go.<br /><br />
+    - Secure public key identity<br /><br />
+    - Ultra privacy with no location trace leaving your phone<br /><br />
+    - Cryptographic Location Sharing (CLS)
+
+map3:
+  content: Map3 enables new spatial data usage model and 1000x infrastructure in scale, performance and cost. Map3 is essentially a decentralized PaaS for Maps/LBS, powered by the One Map Compute technology that supports a massive network of decentralized Map3 nodes.<br /><br />
+    - Create and use arbitrary map layers with custom usage policy<br /><br />
+    - Scalable decentralized infrastructure to enable 1000x performance<br /><br />
+    - Seamless transition from other map technology stack (e.g., Mapbox, OpenLayer)<br /><br />
+    - Strong cryptographic primitive to support map data encryption
+  btn1: Run a node
+  btn2: White Paper
+  btn3: How it Works
+
+atlas:
+  content:
+    Hyperion has launched Atlas Mainnet. It is a high-performance spatial consensus blockchain that supports world-scale map service based on Elastic Spatial Sharding. It aims to solve spatial service requests such as map asset transactions and validation, with special features such as censorship resistance, open participation and fault-tolerance. Atlas will empower Hyperion ONE MAP to build decentralized global map economy that serves 10 billion users.<br /><br />
+    Technically, Atlas will improve in scalability, low-latency, low-cost, privacy-preservation, extensibility, and interoperability. Map3 nodes will join Atlas nodes by re-staking to improve the security and performance of blockchain network. 88 validation nodes will be selected out of all Atlas nodes based on their ranking in staking amount, to obtain block production rewards.
+  btn1: Run a Node
+  btn2: Call the mainnet
+  btn3: Strategy
+
+chronology:
+  title: Chronology Of Maps
+  subtitle: The progression of map towards decentralization.
+  maps:
+    version1:
+      title: MAP 1.0
+      subtitle: Digital Map
+      content: Maps are made digital, interactive and searchable. But lacks openness, privacy and large-scale community contribution.
+    version2:
+      title: MAP 2.0
+      subtitle: Open Map
+      content: The Open Street Map initiative allowed for wide community participation, providing free and open data. However, the underlying technology have not improved much since its inception 10 years ago. Furthermore, the open contribution model lacks social-economic structure, making difficult to govern and incentivize the community.
+    version3:
+      title: MAP 3.0
+      subtitle: Concensus Map
+      content: Coherent system design of technology, community and economy. Enabled by decentralized map technology, self-governed community and sustainable map economy.
+  join: Join <br />Us <br />Now!
+
+team:
+  title: Our Amazing Team
+
+media:
+  title: Media
+  subtitle: News List.
+
+footer:
+  copyright: Copyright
+  notice: Notice and Disclaimer
+
+pages:
+  titan:
+    ncov-data-sources:
+      title: 2019-nCoV Data Sources
+      content: <h6>
+        The red POI data are collected from China’s National Health Committee and Tencent News.The yellow POI data are uploaded by users.
+        </h6>
+    download:
+      title: Titan
+      content: The first ever truly privacy-aware map application built on strong cryptographic primitives. All map functions such as positioning and searching are computed locally at the phone. Your location trace will never leave your phone and you have the power to burn them all with just one click. Through our cryptographic library, you can even share a location to your friend with no other intermedia platforms learning where you are and where you want to go.<br /><br />
+        - Secure public key identity<br /><br />
+        - Ultra privacy with no location trace leaving your phone<br /><br />
+        - Cryptographic Location Sharing (CLS)
+      btns:
+        download:
+          title: Download(Android Only)
+          subtitle: Get it by
+        google:
+          title: Google Play
+          subtitle: Get it on
+    help:
+      title1: Cryptographic location share instructions
+      content1: Titan achieves 100% privacy protection by cryptographic location share. Users can share encrypted location messages, and view location in decoded map with easy steps.
+      title2: A simple guide to “cryptographic location share”
+      content2: <h6>User A (Share encrypted location message), User B (View decoded map)</h6>
+        <h6><strong>Step 1：Share location</strong></h6>
+        <h6>1.	User B copy individual public key address and share it with User A via Messaging Apps</h6>
+        <h6>2.	User A select a location on Titan map, and click “share private location”</h6>
+        <h6>3.	User A paste User B’s public key address</h6>
+        <h6>4.	User A fill in notes to share with location (optional)</h6>
+        <h6>5.	User A Click “encrypt and share” to generate location code and share to B</h6>
+        <h6><strong>Step 2：View decoded map</strong></h6>
+        <h6>1.	User B copy location code received from User A</h6>
+        <h6>2.	Titan will automatically shows the code. User B click “Decode location in Map”</h6>
+        <h6>3.	Or User B manually paste the code to the top frame</h6>
+        <h6>4.	If location shows, your location is decoded successfully.</h6>
+        <h6>5.	Click “Titan” button to delete data after location share</h6>
+    privacy_policy:
+      title: Privacy Policy
+      content: <h6>
+        Hyperion built the MapRush app as a Free app. This SERVICE is provided by Hyperion at no cost
+        and is intended for use as the service provided
+        </h6>
+        <h6>
+        This page is used to inform visitors regarding our policies with the collection, use, and
+        disclosure of Device Information if anyone decided to use our Service.
+        </h6>
+        <h6>
+        We will not collect your information when you choose to use our Service. We will only collect
+        your Device Information when you choose to participate in our product improvement plan. We will
+        not use or share your device information with anyone except as described in this Privacy Policy.
+        </h6>
+        <h6>
+        Information Collection and Use
+        </h6>
+        <h6>
+        For a better experience, when you agree to participate in our product improvement plan, we may
+        require you to provide us with certain device information, including but not limited to
+        Installation UUID, Secure Android ID, Mobile and IDS, IP Addresses, and Crash traces. The
+        information that we request will be retained by us and used as described in this privacy policy.
+        </h6>
+        <h6>
+        The app does use third party services that may collect your device information.
+        </h6>
+        <h6>
+        Link to privacy policy of third party service providers used by the app<br />
+        • <a href="https://fabric.io/privacy" target="_blank">Fabric</a>
+        </h6>
+
+        </ul>
+        <h6>
+        Log Data
+        </h6>
+        <h6>
+        We want to inform you that whenever you use our Service, in a case of an error in the app we
+        collect data and information (through third party products) on your phone called Log Data. This
+        Log Data may include information such as your device Internet Protocol (“IP”) address, device
+        name, operating system version, the configuration of the app when utilizing our Service, the
+        time and date of your use of the Service, and other statistics.
+        </h6>
+        <h6>
+        Service Providers
+        </h6>
+        <h6>
+        We may employ third-party companies and individuals due to the following reasons:<br />
+        • To facilitate our Service;<br />
+        • To provide the Service on our behalf;<br />
+        • To perform Service-related services; or<br />
+        • To assist us in analyzing how our Service is used.<br />
+        </h6>
+        <h6>
+        We want to inform users of this Service that these third parties have access to your Device
+        Information. The reason is to perform the tasks assigned to them on our behalf. However, they
+        are obligated not to disclose or use the information for any other purpose.
+        </h6>
+        <h6>
+        Security
+        </h6>
+        <h6>
+        We value your trust in providing us your Device Information, thus we are striving to use
+        commercially acceptable means of protecting it. But remember that no method of transmission over
+        the internet, or method of electronic storage is 100% secure and reliable, and we cannot
+        guarantee its absolute security.
+        </h6>
+        <h6>
+        Links to Other Sites
+        </h6>
+        <h6>
+        This Service may contain links to other sites. If you click on a third-party link, you will be
+        directed to that site. Note that these external sites are not operated by us. Therefore, we
+        strongly advise you to review the Privacy Policy of these websites. We have no control over and
+        assume no responsibility for the content, privacy policies, or practices of any third-party
+        sites or services.
+        </h6>
+        <h6>
+        Children’s Privacy
+        </h6>
+        <h6>
+        These Services do not address anyone under the age of 13. We do not knowingly collect personally
+        identifiable information from children under 13. In the case we discover that a child under 13
+        has provided us with personal information, we immediately delete this from our servers. If you
+        are a parent or guardian and you are aware that your child has provided us with personal
+        information, please contact us so that we will be able to do necessary actions.
+        </h6>
+        <h6>
+        Changes to This Privacy Policy
+        </h6>
+        <h6>
+        We may update our Privacy Policy from time to time. Thus, you are advised to review this page
+        periodically for any changes. We will notify you of any changes by posting the new Privacy
+        Policy on this page. These changes are effective immediately after they are posted on this page.
+        </h6>
+        <h6>
+        Contact Us
+        </h6>
+        <h6>
+        If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact
+        us.
+        </h6>
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+press:
+  title: Press

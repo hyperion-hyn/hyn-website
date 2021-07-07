@@ -1,0 +1,17 @@
+---
+title: Hyperion Monthly Update- July, 2020
+short-title: Hyperion Monthly Update- July, 2020
+subtitle: July 31th, 2020
+layout: default
+modal-id: 1
+date: July 31th, 2020
+img: wallet.jpg
+thumbnail: wallet.jpg
+alt: image-alt
+project-date: July 31th, 2020
+client: Hyperion
+category: Media
+description: Hyperion Monthly Update- July, 2020
+link-type: out-link
+out-link: https://medium.com/hyperion-sg/hyperion-monthly-update-july-2020-811427d1e909
+---

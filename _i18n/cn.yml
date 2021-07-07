@@ -1,0 +1,229 @@
+# Site settings
+title: Hyn.space
+email: administrator@hyn.space
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+
+langs:
+  en: English
+  cn: 中文（中国）
+
+menus:
+  titan: Titan
+  map3: Map3
+  Atlas: Atlas
+  review: 评论
+  team: 团队
+  media: 媒体
+  forum: 论坛
+
+scrollbar:
+  title: One Map
+  btn: 查看更多
+
+hyperion:
+  title: 海伯利安
+  subtitle: 简介
+  content: 海伯利安是致力于为全球100亿用户提供完整公民地图数据服务的去中心化地图平台，旨在实现“One Map”愿景。海伯利安通过包含空间信息及价值流转的空间共识协议，重新定义用户创建及使用地图服务的方式，与搭建完全开源及去中心化地图的首要原则完美契合。
+
+titan:
+  content:
+    首款基于密码学保障的百分百隐私保护地图App。具有手机端操作定位及搜索位置等功能。此外，泰坦提供个人位置不离开手机，及一键“阅后即焚”的特性。通过密码学技术将达到保障用户分享的个人隐私位置不被第三方窃取的目的。<br /><br />
+    - 安全的公钥地址代替位置接收者身份<br /><br />
+    - 离线地图保障用户数据不离开手机<br /><br />
+    - 密码学保障的位置隐私分享
+
+map3:
+  content:
+    Map3去中心化地图服务网络启用全新的空间数据模型，旨在大规模、高性能及低成本地将基础设施提升1000倍。Map3是由One Map算法技术支撑的去中心化地图/位置服务PaaS, 旨在支持构建Map3去中心化节点的大型网络。<br /><br />
+    - 可创建使用基于自定义用途和规则的随机地图层<br /><br />
+    - 可提升1000倍性能的规模化去中心化基础设施<br /><br />
+    - 跨平台地图技术堆栈间的无缝转接（如Mapbox,Openlayer）<br /><br />
+    - 强密码学原理支撑的地图数据加密
+  btn1: 运行节点
+  btn2: 白皮书
+  btn3: 运作原理
+
+atlas:
+  content:
+    Atlas是以空间共识和弹性空间分片为主要特征的高性能地图区块链，可解决空间分片，账户资产转移，资产确认等与空间相关的服务需求。具有抗审查、开放参与、高容错等特点。未来待Atlas链搭建完成，将支持海伯利安成为服务100亿人的去中心化全球地图经济体系。<br /><br />
+    Atlas将在技术上实现高可伸缩性、低延迟性、低成本、隐私保护、可扩展性和交互性，支持全球体量巨大的地图定位请求和位置搜索请求。未来主网上线之时，用户将能成为Atlas节点，参与提升区块链网络的安全、性能等，并获得HYN奖励。Atlas节点的奖励细则还有待确认，但将与Map3网络的边缘节点以及核心节点关联统一。
+  btn1: 运行节点
+  btn2: 主网调用
+  btn3: 攻略
+
+chronology:
+  title: 地图的演变
+  subtitle: 去中心化地图的演变历史
+  maps:
+    version1:
+      title: 地图 1.0
+      subtitle: 数字地图
+      content: 数字地图具有互动和搜索功能，但缺乏开放、隐私及大规模社区贡献的特性。
+    version2:
+      title: 地图 2.0
+      subtitle: 开源地图
+      content: 开源地图开创了社区参与和免费开放的地图数据，但在过去的十年中技术未得到有效改进。其开放的社区贡献模式缺乏对社区进行有效治理和激励的社会及经济架构。
+    version3:
+      title: 地图3.0
+      subtitle: 共识地图
+      content: 共识地图具有合理的技术、社区及经济系统架构，由去中心化地图技术、自治社区及可持续的地图经济共同驱动发展。
+  join: 现在就<br />加入<br />我们!
+
+team:
+  title: 创始团队
+
+media:
+  title: 媒体
+  subtitle: 新闻列表.
+
+footer:
+  copyright: Copyright
+  notice: 注意及免责声明
+
+pages:
+  titan:
+    download:
+      title: 泰坦
+      content:
+        首款基于密码学保障的百分百隐私保护地图App。可在手机端操作定位、搜索地图位置等功能。具有个人位置不离开手机，及一键“阅后即焚”的特性。通过密码学技术保障用户分享个人隐私位置的同时信息不被第三方窃取。<br /><br />
+        - 安全的公钥地址代替位置接收者身份信息<br /><br />
+        - 离线地图保障用户数据不离开手机<br /><br />
+        - 密码学保障的位置隐私分享
+      btns:
+        download:
+          title: 下载（Android 版）
+          subtitle: 获取途径：
+        google:
+          title: Google 应用商店
+          subtitle: 获取于：
+    help:
+      title1: 私密位置分享说明
+      content1: 泰坦通过加密技术将用户需分享的位置信息生成一串密码符号，以达到百分百保护用户隐私的目的。简易操作步骤即可与选取对象分享位置密文。对方在泰坦地图内可一键解码密文。
+      title2: 泰坦“私密分享”操作攻略
+      content2: <h6>用户A（分享位置密文）用户B （解码密文地图）</h6>
+        <h6><strong>步骤1:分享位置</strong><h6>
+        <h6>1.	B复制个人加密地址（公钥）通过社交App发送给A</h6>
+        <h6>2.	A在泰坦地图界面长按要分享给B的地图位置，并点击“私密分享”</h6>
+        <h6>3.	A粘贴B的加密地址（公钥）</h6>
+        <h6>4.	A选填附言（任何想与B私密分享的内容）</h6>
+        <h6>5.	A点击“加密并分享”生成密文并分享给B</h6>
+        <h6><strong>步骤2：解码位置</strong></h6>
+        <h6>1.	B复制位置密文信息</h6>
+        <h6>2.	B打开泰坦地图, 若密文自动显示，则点击“在地图中显示”</h6>
+        <h6>3.	若密文未自动显示，则将密文粘贴到顶部框内，并点击“解码”</h6>
+        <h6>4.	位置显示，私密位置解码成功</h6>
+        <h6>5.	信息分享完成后，可点击泰坦按钮、“清楚痕迹”焚烧位置记录</h6>
+    ncov-data-sources:
+      title: 2019-nCoV 数据来源
+      content: <h6>
+        红色POI点数据来源于中国国家及各省市卫健委&腾讯新闻等官方数据。黄色POI点数据来源于泰坦用户的贡献。
+        </h6>
+    privacy_policy:
+      title: Privacy Policy
+      content: <h6>
+        Hyperion built the MapRush app as a Free app. This SERVICE is provided by Hyperion at no cost
+        and is intended for use as the service provided
+        </h6>
+        <h6>
+        This page is used to inform visitors regarding our policies with the collection, use, and
+        disclosure of Device Information if anyone decided to use our Service.
+        </h6>
+        <h6>
+        We will not collect your information when you choose to use our Service. We will only collect
+        your Device Information when you choose to participate in our product improvement plan. We will
+        not use or share your device information with anyone except as described in this Privacy Policy.
+        </h6>
+        <h6>
+        Information Collection and Use
+        </h6>
+        <h6>
+        For a better experience, when you agree to participate in our product improvement plan, we may
+        require you to provide us with certain device information, including but not limited to
+        Installation UUID, Secure Android ID, Mobile and IDS, IP Addresses, and Crash traces. The
+        information that we request will be retained by us and used as described in this privacy policy.
+        </h6>
+        <h6>
+        The app does use third party services that may collect your device information.
+        </h6>
+        <h6>
+        Link to privacy policy of third party service providers used by the app<br />
+        • <a href="https://fabric.io/privacy" target="_blank">Fabric</a>
+        </h6>
+
+        </ul>
+        <h6>
+        Log Data
+        </h6>
+        <h6>
+        We want to inform you that whenever you use our Service, in a case of an error in the app we
+        collect data and information (through third party products) on your phone called Log Data. This
+        Log Data may include information such as your device Internet Protocol (“IP”) address, device
+        name, operating system version, the configuration of the app when utilizing our Service, the
+        time and date of your use of the Service, and other statistics.
+        </h6>
+        <h6>
+        Service Providers
+        </h6>
+        <h6>
+        We may employ third-party companies and individuals due to the following reasons:<br />
+        • To facilitate our Service;<br />
+        • To provide the Service on our behalf;<br />
+        • To perform Service-related services; or<br />
+        • To assist us in analyzing how our Service is used.<br />
+        </h6>
+        <h6>
+        We want to inform users of this Service that these third parties have access to your Device
+        Information. The reason is to perform the tasks assigned to them on our behalf. However, they
+        are obligated not to disclose or use the information for any other purpose.
+        </h6>
+        <h6>
+        Security
+        </h6>
+        <h6>
+        We value your trust in providing us your Device Information, thus we are striving to use
+        commercially acceptable means of protecting it. But remember that no method of transmission over
+        the internet, or method of electronic storage is 100% secure and reliable, and we cannot
+        guarantee its absolute security.
+        </h6>
+        <h6>
+        Links to Other Sites
+        </h6>
+        <h6>
+        This Service may contain links to other sites. If you click on a third-party link, you will be
+        directed to that site. Note that these external sites are not operated by us. Therefore, we
+        strongly advise you to review the Privacy Policy of these websites. We have no control over and
+        assume no responsibility for the content, privacy policies, or practices of any third-party
+        sites or services.
+        </h6>
+        <h6>
+        Children’s Privacy
+        </h6>
+        <h6>
+        These Services do not address anyone under the age of 13. We do not knowingly collect personally
+        identifiable information from children under 13. In the case we discover that a child under 13
+        has provided us with personal information, we immediately delete this from our servers. If you
+        are a parent or guardian and you are aware that your child has provided us with personal
+        information, please contact us so that we will be able to do necessary actions.
+        </h6>
+        <h6>
+        Changes to This Privacy Policy
+        </h6>
+        <h6>
+        We may update our Privacy Policy from time to time. Thus, you are advised to review this page
+        periodically for any changes. We will notify you of any changes by posting the new Privacy
+        Policy on this page. These changes are effective immediately after they are posted on this page.
+        </h6>
+        <h6>
+        Contact Us
+        </h6>
+        <h6>
+        If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact
+        us.
+        </h6>
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+press:
+  title: 合作机构
