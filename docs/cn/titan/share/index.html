@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Titan</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="https://www.hyn.space/cn/titan/share/">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/titan-style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link href="/css/google/montserrat.css" rel="stylesheet" type="text/css">
+    <link href="/css/google/Kaushan-Script.css" rel="stylesheet" type="text/css">
+    <link href="/css/google/lato.css" rel="stylesheet" type="text/css">
+    <link href="/css/google/droid.css" rel="stylesheet" type="text/css">
+    <link href="/css/google/roboto.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+    <body id="page-top" class="index">
+
+    <div class="wxtip" id="JweixinTip" style="display: none;">
+    <span class="wxtip-icon"></span>
+    <p class="wxtip-txt">Click on the top right<br />Select open in browser</p>
+</div>
+
+<script type="text/javascript">
+    function getQueryVariable(variable) {
+        let query = window.location.search.substring(1);
+        let vars = query.split("&");
+        for (let i=0;i<vars.length;i++) {
+            let pair = vars[i].split("=");
+            if(pair[0] === variable){
+                return pair[1];
+            }
+        }
+        return(false);
+    }
+
+    var ua = navigator.userAgent;
+    var isWeixin = !!/MicroMessenger/i.test(ua);
+    if (isWeixin) {
+        document.getElementById("JweixinTip").style.display = "block";
+
+        document.getElementById("JweixinTip").onclick = function () {
+            this.style.display = "none";
+        };
+    } else {
+        key = getQueryVariable("key");
+        let titanUrl = "titan://" + key;
+        window.location.href = titanUrl
+    }
+</script>
+
+
+
+
+    </body>
+</html>

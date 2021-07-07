@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hyperion智能合约通过慢雾安全审计</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="canonical" href="https://www.hyn.space/cn/media/2020/04/17/media-1/">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+
+    <body id="page-top" class="index">
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Hyperion | 海伯利安</a>-->
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img src="/cn/img/logos/hyperion.png" alt="Hyperion" class="header-logo">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#titan">Titan</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#map3">Map3</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#atlas">Atlas</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="https://hynscan.io/" target="_blank">HYNScan</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#review">评论</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#media">媒体</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="https://talk.hyn.space/">论坛</a>
+                </li>
+                <li>
+                    <div>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    
+                                    中文（中国）
+                                    
+                                    <b class="caret"></b></a>
+                                <ul class="dropdown-menu" style="background-color: #1a242f">
+                                    <li><a href="/">English</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="/cn">中文（中国）</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--<li>
+                    <a class="page-scroll" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio">Migration</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">History</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>-->
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-heading">One Map</div>
+            <a href="#map3" class="page-scroll btn btn-xl">查看更多</a>
+        </div>
+    </div>
+</header>
+<!--
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+ -->
+    <!-- Services Section -->
+    <section id="features" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">海伯利安</h2>
+                    <h3 class="section-subheading text-muted">简介</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="/cn/img/logos/hyperion-logo.png" alt="Hyperion" class="hyperion-logo">
+                    <p class="text-muted post-content">
+                        海伯利安是致力于为全球100亿用户提供完整公民地图数据服务的去中心化地图平台，旨在实现“One Map”愿景。海伯利安通过包含空间信息及价值流转的空间共识协议，重新定义用户创建及使用地图服务的方式，与搭建完全开源及去中心化地图的首要原则完美契合。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section id="titan" class="reset-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-center">
+                    <img src="/cn/img/logos/titan-logo.png" class="titan-logo">
+                </div>
+                <div class="col-lg-6 text-left">
+                    <p class="row section-subheading text-muted">
+                        首款基于密码学保障的百分百隐私保护地图App。具有手机端操作定位及搜索位置等功能。此外，泰坦提供个人位置不离开手机，及一键“阅后即焚”的特性。通过密码学技术将达到保障用户分享的个人隐私位置不被第三方窃取的目的。<br /><br /> - 安全的公钥地址代替位置接收者身份<br /><br /> - 离线地图保障用户数据不离开手机<br /><br /> - 密码学保障的位置隐私分享
+                    </p>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <!--<a href="https://play.google.com/store/apps/details?id=org.hyn.titan"><img src="/cn/img/google-play.png" class="download-img"></a>-->
+                    <a href="http://h.hyn.space/download" target="_blank" class="btn btn-normal btn-warning" style="width:80%"><span class="glyphicon glyphicon-download-alt"></span> Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+<section id="map3" class="bg-light-gray reset-section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <img src="/cn/img/logos/map3.png" class="map3-logo">
+            </div>
+            <div class="col-lg-6 text-left">
+                <p class="row section-subheading text-muted">
+                    Map3去中心化地图服务网络启用全新的空间数据模型，旨在大规模、高性能及低成本地将基础设施提升1000倍。Map3是由One Map算法技术支撑的去中心化地图/位置服务PaaS, 旨在支持构建Map3去中心化节点的大型网络。<br /><br /> - 可创建使用基于自定义用途和规则的随机地图层<br /><br /> - 可提升1000倍性能的规模化去中心化基础设施<br /><br /> - 跨平台地图技术堆栈间的无缝转接（如Mapbox,Openlayer）<br /><br /> - 强密码学原理支撑的地图数据加密
+                </p>
+            </div>
+            <div class="col-lg-3 text-center">
+                <a href="https://github.com/hyperion-hyn/wiki/wiki/Map3-Edge-on-AWS"
+                    class="page-scroll btn btn-xl map3-btn">运行节点</a>
+                <!--<a href="#portfolio" class="page-scroll btn btn-xl map3-btn">Use Map3 Service</a>-->
+                <a href="https://static.hyn.space/resource/Atlas-the-spatial-consensus-blockchain-v1.0.pdf"
+                    class="page-scroll btn btn-xl map3-btn" target="_blank">运作原理</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Team Section -->
+<section id="atlas" class="reset-section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 text-center">
+                <img src="/cn/img/logos/atlas.png" class="map3-logo">
+            </div>
+            <div class="col-lg-6 text-left">
+                <p class="row section-subheading text-muted">
+                    Atlas是以空间共识和弹性空间分片为主要特征的高性能地图区块链，可解决空间分片，账户资产转移，资产确认等与空间相关的服务需求。具有抗审查、开放参与、高容错等特点。未来待Atlas链搭建完成，将支持海伯利安成为服务100亿人的去中心化全球地图经济体系。<br /><br /> Atlas将在技术上实现高可伸缩性、低延迟性、低成本、隐私保护、可扩展性和交互性，支持全球体量巨大的地图定位请求和位置搜索请求。未来主网上线之时，用户将能成为Atlas节点，参与提升区块链网络的安全、性能等，并获得HYN奖励。Atlas节点的奖励细则还有待确认，但将与Map3网络的边缘节点以及核心节点关联统一。
+                </p>
+            </div>
+            <div class="col-lg-3 text-center">
+                <a href="#"
+                    class="page-scroll btn btn-xl map3-btn">运行节点</a>
+                <a href="#" class="page-scroll btn btn-xl map3-btn">主网调用</a>
+                <a href="#"
+                    class="page-scroll btn btn-xl map3-btn" target="_blank">攻略</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- About Section -->
+    <section id="about" class="bg-light-gray reset-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">地图的演变</h2>
+                    <h3 class="section-subheading text-muted">去中心化地图的演变历史</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>地图 1.0</h4>
+                                    <h4 class="subheading">数字地图</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">数字地图具有互动和搜索功能，但缺乏开放、隐私及大规模社区贡献的特性。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>地图 2.0</h4>
+                                    <h4 class="subheading">开源地图</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">开源地图开创了社区参与和免费开放的地图数据，但在过去的十年中技术未得到有效改进。其开放的社区贡献模式缺乏对社区进行有效治理和激励的社会及经济架构。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>地图3.0</h4>
+                                    <h4 class="subheading">共识地图</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">共识地图具有合理的技术、社区及经济系统架构，由去中心化地图技术、自治社区及可持续的地图经济共同驱动发展。</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>现在就<br />加入<br />我们!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="review" class="reset-section-padding">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <iframe src="https://revain.org/widget-v2/review-carousel?companyType=Project&companySlug=hyperion&consumer=www.hyn.space&contentLines=4&elevationLevel=2&writeReviewAt=3&sortBy=recent&perPage=12&bg=neutral.0&reviewLocale=en&ratingProgressFill=%23eb9c35&blockchainLinkColor=%231f89e5&showMoreLinkColor=%231f89e5&dataSource=null&locale=en&theme=default" width="100%" height="500" style="border: none; display: block"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                </div>
+            </div>
+    </section>
+    <!-- Portfolio Grid Section -->
+    <section id="media" class="bg-light-gray reset-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">媒体</h2>
+                    <h3 class="section-subheading text-muted">新闻列表.</h3>
+                </div>
+            </div>
+            <div class="row">
+                
+                
+                
+                
+                
+                
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                        <a href="https://news.huoxing24.com/20201109150546988617.html" class="portfolio-link" target="_blank">
+                    
+                    
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/media/hynscan_thumbnail.png" class="img-responsive img-centered" height="450px" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h5>海伯利安区块浏览器Hynscan已上线</h5>
+                        <p class="text-muted">November 9th, 2020</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                        <a href="https://news.huoxing24.com/20200927152343063335.html" class="portfolio-link" target="_blank">
+                    
+                    
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/media/atlas_mainnet_thumbnail.png" class="img-responsive img-centered" height="450px" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h5>海伯利安Atlas主网正式上线</h5>
+                        <p class="text-muted">September 27th, 2020</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                        <a href="https://news.huoxing24.com/20200615115713049569.html" class="portfolio-link" target="_blank">
+                    
+                    
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/media/white-paper-v2-thumbnail.png" class="img-responsive img-centered" height="450px" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h5>海伯利安发布经济模型2.0白皮书</h5>
+                        <p class="text-muted">June 22th, 2020</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                        <a href="https://news.huoxing24.com/20200603212126038190.html" class="portfolio-link" target="_blank">
+                    
+                    
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/media/cn_2-thumbnail.jpg" class="img-responsive img-centered" height="450px" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h5>开放地图生态的未来与机遇</h5>
+                        <p class="text-muted">June 3th, 2020</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                        <a href="https://news.huoxing24.com/20200428185711641619.html" class="portfolio-link" target="_blank">
+                    
+                    
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/media/staking-node-thumbnail.jpeg" class="img-responsive img-centered" height="450px" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h5>海伯利安正式公布节点抵押计划</h5>
+                        <p class="text-muted">April 28th, 2020</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    
+                        <a href="https://news.huoxing24.com/20200417123632805515.html" class="portfolio-link" target="_blank">
+                    
+                    
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/media/contract-audit-thumbnail.jpg" class="img-responsive img-centered" height="450px" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h5>Hyperion智能合约通过慢雾安全审计</h5>
+                        <p class="text-muted">April 17th, 2020</p>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="press">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3 class="section-heading">合作机构</h3>
+                </div>
+            </div>
+            <div class="row center">
+                <div><a href="https://cointelegraph.com/explained/mapping-on-the-blockchain-explained" target="_blank" class="press-link"><img src="/cn/img/press/COINTELEGRAPH.png" alt="COINTELEGRAPH" class="press-logo">&nbsp;COINTELEGRAPH</a></div>
+                <div><a href="https://pro.coinpedia.org/companies/hyperion" target="_blank" class="press-link"><img src="/cn/img/press/COINPEDIA.png" alt="COINPEDIA" class="press-logo">&nbsp;COINPEDIA</a></div>
+                <div><a href="https://www.cryptonewspoint.com/how-can-blockchain-improve-digital-maps/" target="_blank" class="press-link"><img src="/cn/img/press/CRYPTO-NEWS-POINT.png" alt="CRYPTO NEWS POINT" class="press-logo">&nbsp;CRYPTO NEWS POINT</a></div>
+                <div class="press-link" style="text-align:center">...</div>
+            </div>
+        </div>
+    </section>
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        
+                        <li><a href="https://t.me/HyperionOfficialHYN"><i class="fa fa-paper-plane"></i></a>
+                        </li>
+                        
+                        <li><a href="https://twitter.com/HyperionHYN?lang=en"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        
+                        <li><a href="https://www.facebook.com/Hyperion-854025704797996/?modal=admin_todo_tour"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        
+                        <li><a href="https://medium.com/@hyperionsgoffical"><i class="fa fa-medium"></i></a>
+                        </li>
+                        
+                        <li><a href="https://github.com/hyperion-hyn"><i class="fa fa-github"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <span class="copyright">ICP证：<a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备19146368号</a> &nbsp;|&nbsp; Copyright &copy; Hyn.mobi 2021</span>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-inline quicklinks">
+                        <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                            <li>注意及免责声明</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Portfolio Modals -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body post-content">
+                            <h3>海伯利安区块浏览器Hynscan已上线</h3>
+                            <hr class="star-primary">
+                            <img src="img/media/hynscan.png" class="img-responsive img-centered" alt="image-alt">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>By:
+                                    <strong>Hyperion</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>November 9th, 2020</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body post-content">
+                            <h3>海伯利安Atlas主网正式上线</h3>
+                            <hr class="star-primary">
+                            <img src="img/media/atlas_mainnet.png" class="img-responsive img-centered" alt="image-alt">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>By:
+                                    <strong>Hyperion</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>September 27th, 2020</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body post-content">
+                            <h3>海伯利安正式发布经济模型2.0白皮书</h3>
+                            <hr class="star-primary">
+                            <img src="img/media/white-paper-v2.png" class="img-responsive img-centered" alt="image-alt">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>By:
+                                    <strong>Hyperion</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>June 22th, 2020</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body post-content">
+                            <h3>开放地图生态的未来与机遇</h3>
+                            <hr class="star-primary">
+                            <img src="img/media/cn_2.jpg" class="img-responsive img-centered" alt="image-alt">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>By:
+                                    <strong>Hyperion</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>June 3th, 2020</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body post-content">
+                            <h3>海伯利安正式公布节点抵押计划</h3>
+                            <hr class="star-primary">
+                            <img src="img/media/staking-node.jpeg" class="img-responsive img-centered" alt="image-alt">
+                            <p></p>
+                            <ul class="list-inline item-details">
+                                <li>By:
+                                    <strong>Hyperion</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>April 28th, 2020</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body post-content">
+                            <h3>Hyperion智能合约通过慢雾安全审计</h3>
+                            <hr class="star-primary">
+                            <img src="img/media/contract-audit.jpeg" class="img-responsive img-centered" alt="image-alt">
+                            <p>
+</p>
+                            <ul class="list-inline item-details">
+                                <li>By:
+                                    <strong>Hyperion</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>April 17th, 2020</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+     <div class="modal-content">
+         <div class="close-modal" data-dismiss="modal">
+             <div class="lr">
+                 <div class="rl">
+                 </div>
+             </div>
+         </div>
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body post-content">
+                         <h3>NOTICE AND DISCLAIMER</h3>
+                         <hr class="star-primary">
+                         <p><p>PLEASE READ THE ENTIRETY OF THIS “NOTICE AND DISCLAIMER” SECTION CAREFULLY. NOTHING HEREIN CONSTITUTES LEGAL, FINANCIAL, BUSINESS OR TAX ADVICE AND YOU SHOULD CONSULT YOUR OWN LEGAL, FINANCIAL, TAX OR OTHER PROFESSIONAL ADVISOR(S) BEFORE ENGAGING IN ANY ACTIVITY IN CONNECTION HEREWITH. NEITHER HYPERION FOUNDATION LTD. (THE FOUNDATION), ANY OF THE PROJECT TEAM MEMBERS (THE HYPERION TEAM) WHO HAVE WORKED ON THE HYPERION ECOSYSTEM (AS DEFINED HEREIN) OR PROJECT TO DEVELOP THE HYPERION ECOSYSTEM IN ANY WAY WHATSOEVER, ANY DISTRIBUTOR/VENDOR OF HYN TOKENS (THE DISTRIBUTOR), NOR ANY SERVICE PROVIDER SHALL BE LIABLE FOR ANY KIND OF DIRECT OR INDIRECT DAMAGE OR LOSS WHATSOEVER WHICH YOU MAY SUFFER IN CONNECTION WITH ACCESSING THIS WHITEPAPER, THE WEBSITE AT HTTPS://WWW.HYN.SPACE (THE WEBSITE) OR ANY OTHER WEBSITES OR MATERIALS PUBLISHED BY THE FOUNDATION.</p>
+
+<p>The Whitepaper and the Website are intended for general informational purposes only and does not constitute a prospectus, an offer document, an offer of securities, a solicitation for investment, or any offer to sell any product, item or asset (whether digital or otherwise). The information herein may not be exhaustive and does not imply any element of a contractual relationship. There is no assurance as to the accuracy or completeness of such information and no representation, warranty or undertaking is or purported to be provided as to the accuracy or completeness of such information. Where the Whitepaper or the Website includes information that has been obtained from third party sources, the Foundation, the Distributor, and/or the Hyperion team have not independently verified the accuracy or completion of such information. Further, you acknowledge that circumstances may change and that the Whitepaper or the Website may become outdated as a result; and neither the Foundation nor the Distributor is under any obligation to update or correct this document in connection therewith.</p>
+
+<p>Nothing in the Whitepaper or the Website constitutes any offer by the Foundation, the Distributor or the Hyperion team to sell any HYN (as defined herein) nor shall it or any part of it nor the fact of its presentation form the basis of, or be relied upon in connection with, any contract or investment decision. Nothing contained in the Whitepaper or the Website is or may be relied upon as a promise, representation or undertaking as to the future</p>
+
+<p>Draft for open community review and subject to change.</p>
+
+<p>performance of the Hyperion Ecosystem. The agreement between the Distributor and you, in relation to any sale and purchase of HYN is to be governed by only the separate terms and conditions of such agreement.</p>
+
+<p>By accessing the Whitepaper or the Website (or any part thereof), you represent and warrant to the Foundation, the Distributor, its affiliates, and the Hyperion team as follows:</p>
+
+<p>• (a)  inanydecisiontopurchaseanyHYN,youhavenotreliedonanystatementsetoutinthe Whitepaper or the Website;</p>
+
+<p>• (b)  you will and shall at your own expense ensure compliance with all laws, regulatory requirements and restrictions applicable to you (as the case may be);</p>
+
+<p>• (c)  you acknowledge, understand and agree that HYN may have no value, there is no guarantee or representation of value or liquidity for HYN, and HYN is not for speculative investment;</p>
+
+<p>• (d)  none of the Foundation, the Distributor, its affiliates, and/or the Hyperion team members shall be responsible for or liable for the value of HYN, the transferability and/or liquidity of HYN and/or the availability of any market for HYN through third parties or otherwise; and</p>
+
+<p>• (e)  you acknowledge, understand and agree that you are not eligible to purchase any HYN if you are a citizen, national, resident (tax or otherwise), domiciliary and/or green card holder of a geographic area or country (i) where it is likely that the sale of HYN would be construed as the sale of a security (howsoever named), financial service or investment product and/or (ii) where participation in token sales is prohibited by applicable law, decree, regulation, treaty, or administrative act (including without limitation the United States of America, Canada, New Zealand, People’s Republic of China (but not including the special administrative regions of Hong Kong and Macau, and the territory of Taiwan), the Republic of Korea and the Socialist Republic of Vietnam).</p>
+
+<p>The Foundation, the Distributor and the Hyperion team do not and do not purport to make, and hereby disclaims, all representations, warranties or undertaking to any entity or person (including without limitation warranties as to the accuracy, completeness, timeliness or</p>
+
+<p>reliability of the contents of the Whitepaper or the Website, or any other materials published by the Foundation or the Distributor). To the maximum extent permitted by law, the Foundation, the Distributor, their affiliates and service providers shall not be liable for any indirect, special, incidental, consequential or other losses of any kind, in tort, contract or otherwise (including, without limitation, any liability arising from default or negligence on the part of any of them, or any loss of revenue, income or profits, and loss of use or data) arising from the use of the Whitepaper or the Website, or any other materials published, or its contents (including without limitation any errors or omissions) or otherwise arising in connection with the same. Prospective purchasers of HYN should carefully consider and evaluate all risks and uncertainties (including financial and legal risks and uncertainties) associated with the HYN token sale, the Foundation, the Distributor and the Hyperion team.</p>
+
+<p>All contributions will be applied towards the advancing, promoting the research, design and development of, and advocacy for the incorporation of blockchain technologies to ensure that online maps continue to remain pervasive, accurate and privacy‐preserved, with the goal to finally solve the systemic issues of incomplete, inaccurate and outdated map data, limited transparency, poor privacy and ownership. The Foundation, the Distributor and their various affiliates would develop, manage and operate the Hyperion Ecosystem.</p>
+
+<p>The information set out in the Whitepaper and the Website is for community discussion only and is not legally binding. No person is bound to enter into any contract or binding legal commitment in relation to the acquisition of HYN, and no virtual currency or other form of payment is to be accepted on the basis of the Whitepaper or the Website. The agreement for sale and purchase of HYN and/or continued holding of HYN shall be governed by a separate set of Terms and Conditions or Token Purchase Agreement (as the case may be) setting out the terms of such purchase and/or continued holding of HYN (the Terms and Conditions), which shall be separately provided to you or made available on the Website. In the event of any inconsistencies between the Terms and Conditions and the Whitepaper or the Website, the Terms and Conditions shall prevail.</p>
+
+<p>No regulatory authority has examined or approved of any of the information set out in the Whitepaper or the Website. No such action has been or will be taken under the laws, regulatory requirements or rules of any jurisdiction. The publication, distribution or</p>
+
+<p>dissemination of the Whitepaper or the Website does not imply that the applicable laws, regulatory requirements or rules have been complied with.</p>
+
+<p>The information set out herein is only conceptual, and describes the future development goals for the Hyperion Ecosystem to be developed. The Whitepaper or the Website may be amended or replaced from time to time. There are no obligations to update the Whitepaper or the Website, or to provide recipients with access to any information beyond what is provided herein.</p>
+
+<p>All statements contained herein, statements made in press releases or in any place accessible by the public and oral statements that may be made by the Foundation, the Distributor and/or the Hyperion team may constitute forward‐looking statements (including statements regarding intent, belief or current expectations with respect to market conditions, business strategy and plans, financial condition, specific provisions and risk management practices). You are cautioned not to place undue reliance on these forward‐looking statements given that these statements involve known and unknown risks, uncertainties and other factors that may cause the actual future results to be materially different from that described by such forward‐looking statements, and no independent third party has reviewed the reasonableness of any such statements or assumptions. These forward‐looking statements are applicable only as of the date indicted in the Whitepaper, and the Foundation, the Distributor as well as the Hyperion team expressly disclaims any responsibility (whether express or implied) to release any revisions to these forward‐looking statements to reflect events after such date.</p>
+
+<p>The use of any company and/or platform names or trademarks herein (save for those which relate to the Foundation, the Distributor or its affiliates) does not imply any affiliation with, or endorsement by, any third party. References in the Whitepaper or the Website to specific companies and platforms are for illustrative purposes only.</p>
+
+<p>The Whitepaper and the Website may be translated into a language other than English and in the event of conflict or ambiguity between the English language version and translated versions of the Whitepaper or the Website, the English language versions shall prevail. You</p>
+
+<p>acknowledge that you have read and understood the English language version of the Whitepaper and the Website.</p>
+
+<p>No part of the Whitepaper or the Website is to be copied, reproduced, distributed or disseminated in any way without the prior written consent of the Foundation or the Distributor.</p>
+</p>
+                         <ul class="list-inline item-details">
+                             <li>By:
+                                 <strong>Hyperion</strong>
+                             </li>
+                             <li>Date:
+                                 <strong>September 24sth, 2018</strong>
+                             </li>
+                         </ul>
+                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+     <!-- jQuery Version 1.11.0 -->
+    <script src="/cn/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/cn/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/cn/js/jquery.easing.min.js"></script>
+    <script src="/cn/js/classie.js"></script>
+    <script src="/cn/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/cn/js/jqBootstrapValidation.js"></script>
+    <script src="/cn/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/cn/js/agency.js"></script>
+
+ <div style="display:none">
+    <script type="text/javascript" src="https://s96.cnzz.com/z_stat.php?id=1277050005&web_id=1277050005"></script>
+ </div>
+
+ <script type="text/javascript">
+     $('ul.nav li.dropdown').hover(function() {
+         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+     }, function() {
+         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+     });
+ </script>
+
+
+    </body>
+</html>

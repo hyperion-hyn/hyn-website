@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=scale,maximum-scale=scale,minimum-scale=scale,user-scalable=no">
+    <!-- dpr = 2-->
+    <meta name="viewport" content="initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no">
+    <!-- dpr = 3-->
+    <meta name="viewport" content="initial-scale=0.3333333333,maximum-scale=0.3333333333,minimum-scale=0.3333333333,user-scalable=no">
+    <title>Titan private share</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<div id="main-area">
+    <div class="row-cols-lg-12" id="banner">
+        <img src="./img/private-share.png" width="100%" height="auto" />
+    </div>
+
+    <div class="row-cols-12" id="secret">
+        <div class="form-row">
+            <h1>地址密文：</h1>
+        </div>
+        <div class="form-row">
+            <p>titan_cipherL7hmdVDaSmMvRjFbV5t13snQSCQoHYDG8ZaJL7K13tCDdCDkzDA8CLW18LtAeira3zQsQyk96XamQAZBBFSYL2v4iW9oeh14RjbTcYiam6228Km95Y1fDUAfLTyCSYhw7TunKuvncbPrT5xMpRjZHRo5eKbx6x4q3KceDc2vBJz1s3HLwdTpgcazZJZYkC5MQ5qvsYwGFD5au6oUL2tUyjvrzjkiP1mxCicWMEoVdc7dSFCA1LE8ypRKBRTJ8Xy</p>
+        </div>
+
+        <div class="" id="decode-secret">
+            <div id="do-decode"><li class="private-key"></li><span>解密</span></div>
+        </div>
+    </div>
+
+    <div class="row-cols-12" id="dl-titan">
+        <button class="btn-titan">下载泰坦</button>
+    </div>
+</div>
+<div class="wxtip" id="JweixinTip" style="display: none;">
+    <span class="wxtip-icon"></span>
+    <p class="wxtip-txt">Click on the top right<br />Select open in browser</p>
+</div>
+</body>
+<script type="text/javascript">
+    let ua = navigator.userAgent;
+    let isWechat = !!/MicroMessenger/i.test(ua);
+    if (isWechat) {
+        document.getElementById("JweixinTip").style.display = "block";
+
+        document.getElementById("JweixinTip").onclick = function () {
+            this.style.display = "none";
+        };
+    }
+
+    function getQueryString(name) {
+        let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        let r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return decodeURIComponent(r[2]);
+        }
+
+        return null;
+    }
+
+    let key = getQueryString("key");
+    $("#secret p").text(key);
+
+    const decode = document.querySelector('#do-decode');
+    decode.addEventListener('click', () => {
+        //实例化clipboard
+        let callAppUrl = "titan://location/share?msg=" + key;
+        const url = "https://www.hyn.mobi/titan/download";
+
+        setTimeout(function () {
+            window.location.href = callAppUrl;
+            window.setTimeout(function () {
+                console.log("in");
+                window.location.href = url;
+            }, 2000)
+        }, 500);
+    });
+    const downTitan = document.querySelector(".btn-titan");
+    downTitan.addEventListener('click', () => {
+        window.location.href = "https://www.hyn.mobi/titan/download";
+    });
+</script>
+</html>

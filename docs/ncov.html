@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>泰坦地图-全球新冠病毒疫情 | 海伯利安</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1500;
+        }
+
+        #down-app {
+            width: 280px;
+            height: 64px;
+            background: rgba(15, 149, 176, 1);
+            border-radius: 10px;
+            display: block;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #down {
+            width: 140px;
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            line-height: 20px;
+            margin: 0 auto;
+            padding-top: 12px;
+        }
+
+        #post-poi {
+            width: 155px;
+            height: 17px;
+            font-size: 12px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 17px;
+            margin: 0 auto;
+        }
+
+        #download-area {
+            position: absolute;
+            bottom: 80px;
+            width: 100%;
+        }
+
+        #logo-area {
+            position: absolute;
+            top: 40px;
+            left : 10px;
+        }
+
+        #logo {
+            width: 40px;
+            height: 40px;
+            float: left;
+        }
+
+        #logo-text {
+            float: left;
+            padding-left: 8px;
+        }
+
+        #hyperion {
+            width:56px;
+            height:20px;
+            font-size:14px;
+            font-family:PingFangSC-Semibold,PingFang SC;
+            font-weight:600;
+            color:rgba(255,255,255,1);
+            line-height:20px;
+            display: block;
+        }
+
+        #nCoV-map {
+            width:72px;
+            height:17px;
+            font-size:12px;
+            font-family:PingFangSC-Medium,PingFang SC;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            line-height:17px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="logo-area" onclick="hyperion()">
+        <img id="logo"
+            src="data:image/png;base64,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" />
+        <div id="logo-text">
+            <span id="hyperion">海伯利安</span>
+            <span id="nCoV-map">泰坦疫情地图</span>
+        </div>
+    </div>
+    <div id="download-area">
+        <botton id="down-app" onclick="download()">
+            <div id="down">下载泰坦去中心化地图</div>
+            <div id="post-poi">贡献/查看全球新冠病毒疫情</div>
+        </botton>
+
+    </div>
+    <script>
+        mapboxgl.accessToken = 'pk.hyn';
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'https://cn.tile.map3.network/ncov_v1.json', // stylesheet location
+            center: [114.058979, 22.536192], // starting position [lng, lat]
+            zoom: 7 // starting zoom
+        });
+
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+        }
+
+
+        function showPosition(position) {
+
+
+            map.flyTo({
+                center: [position.coords.longitude, position.coords.latitude],
+                zoom: 7,
+                minZoom: 1.1,
+                maxZoom: 20,
+            });
+        }
+
+        getLocation();
+
+
+        // map.on('load', function () {
+        //     map.addLayer({
+        //         'id': 'points',
+        //         'type': 'circle',
+        //         'source': {
+        //             'type': 'vector',
+        //             'tiles': [
+        //                 'http://localhost:5000/tile/global/police/{z}/{x}/{y}.pbf'
+        //             ],
+        //             'minzoom': 9,
+        //             'maxzoom': 20
+
+        //         },
+        //         'source-layer': 'police',
+        //         'paint': {
+        //             'circle-radius': 8,
+        //             'circle-color': 'rgba(55,148,179,1)'
+        //         },
+        //     });
+        // });
+
+        function download() {
+            window.location.href = "https://www.hyn.mobi/cn/titan/download/";
+        }
+
+        function hyperion() {
+            window.location.href = "https://www.hyn.mobi/cn";
+        }
+    </script>
+
+</body>
+
+</html>
